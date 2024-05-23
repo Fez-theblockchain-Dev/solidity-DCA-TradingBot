@@ -1,0 +1,26 @@
+:root {
+--primary-color: aqua;
+--bg-color: black;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'inter', sans-serif;
+
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+
+}
+
+
+
