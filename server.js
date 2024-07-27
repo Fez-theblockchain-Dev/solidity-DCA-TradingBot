@@ -1,3 +1,5 @@
+// this node/express.js server will host the future web app. Currently has general back end server scaffolding code in it
+
 // import express from 'express';
 
 import express from 'express';
