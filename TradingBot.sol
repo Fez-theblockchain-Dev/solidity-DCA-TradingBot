@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.25;
+pragma solidity 0.8.19;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol";
 import "https://github.com/Uniswap/v2-periphery/blob/master/contracts/UniswapV2Router02.sol";
 contract Dca {
-    IERC20 public usdc = IERC20(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48)
+    IERC20 public usdc = IERC20(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48);
     // allows you to buy/sell tokens on Uniswap w/ router02 address
     IUniswapV2Router02 public router = IUniswapV2Router02("0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D");
     address public owner;
     uint public lastInvestment;
-    uint public budget
+    uint public budget;
 
 constructor() {
     owner = msg.sender;
@@ -22,10 +22,10 @@ constructor() {
     }
 
     function invest() external {
-        require (block.timestamp > lastInvestment + 30days, "too soon");
+        require (block.timestamp > lastInvestment + 30 days, "too soon");
     
     address[] memory path = new address [] (2);
-    path[0] = address(usdc)
+    path[0] = address(usdc);
     path[1] = router.WETH();
 
 
