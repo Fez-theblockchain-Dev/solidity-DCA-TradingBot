@@ -112,4 +112,16 @@ footer {
   padding: 20px;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #00ffff;
+    background-color: #1d2a35;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+
 
