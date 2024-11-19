@@ -37,3 +37,16 @@ To set up the Solidity DCA Trading Bot:
    ```bash
    git clone https://github.com/your-username/solidity-dca-tradingbot.git
 
+
+2. Navigate to the project directory (Bash/Zsh):
+
+PASTE: cd solidity-dca-tradingbot
+
+3. Compile the smart contract using Hardhat (Bash/Zsh):
+
+PASTE: npx hardhat compile
+
+4. Deploy the TradingBot.sol smart contract (Bash/Zsh):
+
+PASTE: npx hardhat run scripts/deploy.js --network <network-name>
+
